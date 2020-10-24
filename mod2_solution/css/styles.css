@@ -7,48 +7,49 @@ h1 {
   text-align: center;
 }
 
-.div {
-  position: relative;
+.container{
+  padding: 0 10px 10px 10px;
+}
+
+p {
   border: 2px solid black;
-  width: 90%;
-  background-color: gray;
-  margin: 20px 1.15%;
+  background-color: rgb(138, 138, 138);
 }
 
 #p1 {
   background-color: cyan;
-  position: absolute;
-  top: 0;
-  right: 0;
   color: black;
-  text-align: right;
-  width: 50px;
-  height: 20px;
+  width: 45px;
   border: 1px solid black;
+  position: relative;
+  float: right;
+  margin-top: 0;
+  margin-left: 100%;
+  margin-bottom: 0;
 }
 
 #p2 {
   background-color: red;
-  position: absolute;
-  top: 0;
-  right: 0;
   color: white;
-  text-align: right;
-  width: 50px;
-  height: 20px;
+  width: 45px;
   border: 1px solid black;
+  position: relative;
+  float: right;
+  margin-top: 0;
+  margin-left: 100%;
+  margin-bottom: 0;
 }
 
 #p3 {
   background-color: paleturquoise;
-  position: absolute;
-  top: 0;
-  right: 0;
   color: black;
-  text-align: right;
-  width: 50px;
-  height: 20px;
+  width: 45px;
   border: 1px solid black;
+  position: relative;
+  float: right;
+  margin-top: 0;
+  margin-left: 100%;
+  margin-bottom: 0;
 }
 
 .row {
@@ -59,7 +60,6 @@ h1 {
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -71,7 +71,7 @@ h1 {
     width: 25%;
   }
   .col-lg-4 {
-    width: 31%;
+    width: 33.3%;
   }
   .col-lg-5 {
     width: 41.66%;
@@ -103,7 +103,6 @@ h1 {
 @media (min-width: 950px) and (max-width: 1199px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -115,7 +114,7 @@ h1 {
     width: 25%;
   }
   .col-md-4 {
-    width: 31%;
+    width: 33.3%;
   }
   .col-md-5 {
     width: 41.66%;
