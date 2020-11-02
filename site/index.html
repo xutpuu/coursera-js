@@ -1,11 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IDKFA hub center</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,300,700" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <h1>Hi, German</h1>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+          <div class="navbar-brand">
+            <a href="index.html">
+              <h1>IDKFA hub center</h1>
+            </a>
+            <p> <img src="images/images.png" alt="LOGO" width="10%"><span>LOGO</span></p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-music"></span><br class="hidden-xs"> Music</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> User</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a>
+              <div>* reservation</div>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+
+      </div>
+    </nav>
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+      <span class="glyphicon glyphicon-earphone">410-602-5008</span>
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs"> * reservaton</div>
+  <div id="main-content" class="container">
+    <div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="Picture of computerclub" class="img-responsive visible-xs">
+    </div>
+  </div>
+
+  <div id="home-tiles" class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12"><a href="menu-categories.html">
+        <div id="menu-tile"><span>Menu</span>
+      </div></a></div>
+    <div class="col-md-4 col-sm-6 col-xs-12"><a href="special-category.html">
+        <div id="specials-tile"><span>Specials</span>
+      </div></a></div>
+    <div class="col-md-4 col-sm-12 col-xs-12"><a href="" target="_blank">
+        <div id="map-tile"><span>Map</span>
+      </div></a></div>
+  </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
