@@ -118,16 +118,61 @@ img {
 }
 
 #menu-tile {
-  background: url('https://via.placeholder.com/250') no-repeat;
+  background: url('https://via.placeholder.com/360x250?text=Menu') no-repeat;
   background-position: center;
 }
 
 #specials-tile {
-  background: url('https://via.placeholder.com/250') no-repeat;
+  background: url('https://via.placeholder.com/360x250?text=Specials') no-repeat;
   background-position: center;
 }
 
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #0000;
+  color: #fff;
+  opacity: .8;
+}
+
 /* END HEADER */
+
+/* FOOTER */
+
+.panel-footer {
+  margin: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer dev.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours>span, #address>span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: 0.8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+
+/* END FOOTER */
 
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -204,9 +249,38 @@ img {
     text-transform: uppercase;
   }
   /* End Header */
+
+  /* Footer */
+  .panel-footer section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+    margin-bottom: 0;
+  }
+  .panel-footer section hr{
+    width: 50%;
+  }
+  /* End Footer */
+
   /* Home Page */
   .container .jumbotron {
     margin-top: 30px;
     padding: 0;
+  }
+  #menu-tile, #specials-tile {
+    width: 300px;
+    margin: 0 auto 15px;
+  }
+}
+
+@media (max-width: 479px) {
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
   }
 }
